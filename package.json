@@ -1,0 +1,29 @@
+{
+  "name": "balt",
+  "version": "1.0.0",
+  "description": "ooo balt website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "balt-website"
+  },
+  "author": "musabii",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.52.0",
+    "webpack": "^5.72.1",
+    "webpack-cli": "^4.9.2"
+  },
+  "devDependencies": {
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^6.7.1",
+    "html-webpack-plugin": "^5.5.0",
+    "pug": "^2.0.4",
+    "pug-loader": "^2.4.0",
+    "sass-loader": "^13.0.0",
+    "style-loader": "^3.3.1"
+  }
+}
