@@ -7,12 +7,38 @@ html(lang="en")
         title Document
     body
         header.container
-            .logo logo
+            a.logo(href="/dist/index.html") logo
             nav
-                .nav-item Главная
-                .nav-item Товары
-                .nav-item О компании
-                .nav-item Карьера
-                .nav-item Контакты
-        main
+                a.nav-item(href="http://google.com" target="_blank") Главная
+                a.nav-item(href="http://google.com" target="_blank") Товары
+                a.nav-item(href="#about")       О компании
+                a.nav-item(href="http://google.com" target="_blank") Карьера
+                a.nav-item(href="http://google.com" target="_blank") Контакты
+        main.container
+            .container-text
+            .container-img
+        .carousel.container
+            h1.title Карусель
+        .distributors.container
+            h1.title Наши партнеры
+            .grid-box
+                .grid-item
+                    img(src=require("./assets/vbdlogo.png").default)
+                    .grid-item__title Вим биль дан
+                .grid-item
+                    img(src=require("./assets/danonlogo.png").default)
+                    .grid-item__title Данон
+                .grid-item
+                    img(src=require("./assets/unimilklogo.png").default)
+                    .grid-item__title Юнимилк
+                .grid-item
+                    img(src=require("./assets/goldlogo.png").default)
+                    .grid-item__title Золотые луга
+        .about#about.container
+            h1.title О нас
+                p Наша компания — оптовый поставщик продуктов питания и один из лидеров по оказанию услуг питания в сегменте муниципальных бюджетных общеобразовательных учреждений Ямало-Ненецкого автономного округа и производственных участков различных организаций. Наши сотрудники обслуживают несколько тысяч человек и сотни предприятий ежедневно. Мы предлагаем большой ассортимент продуктов питания, напитков, сельскохозяйственной продукции по конкурентоспособным ценам!
+                p Общество с ограниченной ответственностью «БАЛТ», является преемником компании «СТЭЛС» и продолжает с успехом реализовывать продукты питания на рынке города Новый Уренгой, а также - близлежащих городов и поселков.
+
+
+
 

@@ -1,2 +1,2 @@
 import "./style.scss";
-console.log('hello');
+// import './assets/vbdlogo.png';

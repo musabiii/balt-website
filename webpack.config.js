@@ -1,7 +1,11 @@
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 
 module.exports = {
+    stats: {
+        children: true,
+    },
     watch:true,
     mode: 'development',
     context: path.join(__dirname,'src'),
@@ -12,7 +16,9 @@ module.exports = {
     },
     plugins: [new HtmlWebpackPlugin({
         template:"./index.pug"
-    })],
+    }),
+    // new CleanWebpackPlugin()
+],
     module: {
         rules: [
             {
@@ -23,6 +29,30 @@ module.exports = {
                 test: /\.s[ac]ss$/i,
                 use: ["style-loader","css-loader","sass-loader"]
             },
+            // {
+            //     test: /\.html$/,
+            //     type: "asset/resource",
+            //     generator: {
+            //       filename: "[name][ext]",
+            //     },
+            //   },
+            //   {
+            //     test: /\.html$/i,
+            //     use: ["html-loader"],
+            //   },
+            {
+                test: /\.(png|jpg|svg|gif)$/,
+                use: ['file-loader'],
+                // options:{
+                //     name: '[path][name].[ext]',
+                //     outputPath :  './images/',
+                // }
+            },
+            // {
+            //     test: /\.(jpg|png|gif|woff|eot|ttf|svg)/,
+            //     use:["url"]
+            // }
+            //d
         ]
     }
 }

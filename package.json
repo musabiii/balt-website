@@ -4,7 +4,8 @@
   "description": "ooo balt website",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx webpack"
   },
   "repository": {
     "type": "git",
@@ -20,10 +21,13 @@
   "devDependencies": {
     "clean-webpack-plugin": "^4.0.0",
     "css-loader": "^6.7.1",
+    "file-loader": "^6.2.0",
+    "html-loader": "^3.1.0",
     "html-webpack-plugin": "^5.5.0",
     "pug": "^2.0.4",
     "pug-loader": "^2.4.0",
     "sass-loader": "^13.0.0",
-    "style-loader": "^3.3.1"
+    "style-loader": "^3.3.1",
+    "url-loader": "^4.1.1"
   }
 }

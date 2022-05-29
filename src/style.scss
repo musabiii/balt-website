@@ -1,0 +1,81 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Mulish:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+$colortxt: #696969;
+$color1: #88B2CC;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: $colortxt;
+    text-decoration: none;
+}
+
+html {
+    font-size: 20px;
+    color: $colortxt;
+    // font-family: 'Nunito';
+    font-family: 'Mulish';
+    // background:url(./assets/vbdlogo.png);
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1170px;
+    width: 100%;
+    border: 1px solid #eee;
+    margin-top: 100px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding-top: 10px;
+    nav {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        .nav-item {
+            text-decoration: none;
+            &:hover {
+                color: $color1;
+            }
+        }
+    }
+}
+
+.grid-box {
+    // display: grid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    .grid-item {
+        text-align: center;
+        // width: 200px;
+        height: 100px;
+        &__title {
+            // font-weight: 600;
+            font-style: .5rem;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+}
+
+.about {
+    p {
+        font-size: 1rem;
+        margin-top: 10px;
+        font-weight: 400;
+    }
+}
+
