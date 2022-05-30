@@ -12,13 +12,23 @@ html(lang="en")
                 a.nav-item(href="http://google.com" target="_blank") Главная
                 a.nav-item(href="http://google.com" target="_blank") Товары
                 a.nav-item(href="#about")       О компании
-                a.nav-item(href="http://google.com" target="_blank") Карьера
-                a.nav-item(href="http://google.com" target="_blank") Контакты
+                a.nav-item(href="#contacts" target="_blank") Карьера
+                a.nav-item(href="#contacts") Контакты
+
         main.container
             .container-text
             .container-img
+
         .carousel.container
             h1.title Карусель
+            .box-out
+                .box-inn
+                    each val in [1, 2, 3]
+                        .card
+                            img(src=require(`./assets/carousel/${val}.jpg`).default)
+                .left-control.controls left
+                .right-control.controls right
+
         .distributors.container
             h1.title Наши партнеры
             .grid-box
@@ -34,6 +44,7 @@ html(lang="en")
                 .grid-item
                     img(src=require("./assets/goldlogo.png").default)
                     .grid-item__title Золотые луга
+
         .about#about.container
             h1.title О нас
                 p Наша компания — оптовый поставщик продуктов питания и один из лидеров по оказанию услуг питания в сегменте муниципальных бюджетных общеобразовательных учреждений Ямало-Ненецкого автономного округа и производственных участков различных организаций. Наши сотрудники обслуживают несколько тысяч человек и сотни предприятий ежедневно. Мы предлагаем большой ассортимент продуктов питания, напитков, сельскохозяйственной продукции по конкурентоспособным ценам!
@@ -41,6 +52,12 @@ html(lang="en")
 
         .goods.container
             h1.title Товары
+
+        .contacts#contacts.container
+            h1.title Контакты
+
+        footer.container
+            .footer-item s
 
 
 
