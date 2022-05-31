@@ -29,17 +29,6 @@ module.exports = {
                 test: /\.s[ac]ss$/i,
                 use: ["style-loader","css-loader","sass-loader"]
             },
-            // {
-            //     test: /\.html$/,
-            //     type: "asset/resource",
-            //     generator: {
-            //       filename: "[name][ext]",
-            //     },
-            //   },
-            //   {
-            //     test: /\.html$/i,
-            //     use: ["html-loader"],
-            //   },
             {
                 test: /\.(png|jpg|svg|gif)$/,
                 use: ['file-loader'],
@@ -48,11 +37,6 @@ module.exports = {
                 //     outputPath :  './images/',
                 // }
             },
-            // {
-            //     test: /\.(jpg|png|gif|woff|eot|ttf|svg)/,
-            //     use:["url"]
-            // }
-            //d
         ]
     }
 }
