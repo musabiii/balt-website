@@ -6,6 +6,7 @@ module.exports = {
     stats: {
         children: true,
     },
+    cache: false,
     watch:true,
     mode: 'development',
     context: path.join(__dirname,'src'),
@@ -17,7 +18,7 @@ module.exports = {
     plugins: [new HtmlWebpackPlugin({
         template:"./index.pug"
     }),
-    // new CleanWebpackPlugin()
+    new CleanWebpackPlugin()
 ],
     module: {
         rules: [

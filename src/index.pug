@@ -16,10 +16,14 @@ html(lang="en")
                 a.nav-item(href="#contacts" target="_blank") Карьера
                 a.nav-item(href="#contacts") Контакты
 
-        main.container
-            .container-text
-            .container-img
-                img()
+        main.container.odd
+            .main-text
+                p
+                    span.a ОПТОВЫЕ ПРОДАЖИ
+                p
+                    span.b ПРОДУКТОВ С ДОСТАВКОЙ ПО ЯНАО
+            .main-img
+                img(src=require(`./assets/warehouse.png`).default)
 
         .carousel.container
             h1.title Карусель
@@ -36,7 +40,7 @@ html(lang="en")
                     each val in [1, 2, 3]
                         .page-dot
 
-        .distributors.container
+        .distributors.container.odd
             h1.title Наши партнеры
             .grid-box
                 .grid-item
