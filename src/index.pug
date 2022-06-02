@@ -26,12 +26,21 @@ html(lang="en")
                 img(src=require(`./assets/warehouse.png`).default)
 
         .carousel.container
-            h1.title Карусель
+            h1.title Наши преимущества
             .box-out
                 .box-inn
-                    each val in [1, 2, 3]
-                        .card
-                            img(src=require(`./assets/carousel/${val}.jpg`).default)
+                    .card
+                        .card-img
+                            img(src=require(`./assets/carousel/1.png`).default)
+                        h1 Доставка по ЯНАО
+                    .card
+                        .card-img
+                            img(src=require(`./assets/carousel/2.jpg`).default)
+                        h1 Доставка по ЯНАО
+                    .card
+                        .card-img
+                            img(src=require(`./assets/carousel/3.jpg`).default)
+                        h1 Доставка по ЯНАО
                 .left-control.controls
                     img(src=require("./assets/arrowleft.svg").default)
                 .right-control.controls
@@ -63,6 +72,20 @@ html(lang="en")
 
         .goods.container
             h1.title Товары
+
+        .support.container
+            h1.title Поддержка сервисов
+            .grid-box
+                .grid-item
+                    img(src=require("./assets/support/mercuri.png").default)
+                    .grid-item__title ФГИС Меркурий
+                .grid-item
+                    img(src=require("./assets/support/edo.png").default)
+                    .grid-item__title ЭДО
+                .grid-item
+                    img(src=require("./assets/support/honest.png").default)
+                    .grid-item__title Честный знак
+
 
         .contacts#contacts.container
             h1.title Контакты
