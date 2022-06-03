@@ -10,9 +10,9 @@ module.exports = {
     watch:true,
     mode: 'development',
     context: path.join(__dirname,'src'),
-    entry: {main:"./index.js"},
+    entry: {main:"./index.js",map:"./map.js"},
     output: {
-        filename: 'bundle.js',
+        filename: '[name].bundle.js',
         path: path.join(__dirname,'dist')
     },
     plugins: [new HtmlWebpackPlugin({

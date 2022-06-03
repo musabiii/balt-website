@@ -19,7 +19,7 @@ const offsetControl =(page=0)=>(len=1)=>{
 
 const letOffset = offsetControl();
 
-setInterval(letOffset,10000); //auto shift
+// setInterval(letOffset,10000); //auto shift
 
 next.addEventListener('click',()=>{
     letOffset();
@@ -27,4 +27,10 @@ next.addEventListener('click',()=>{
 
 prev.addEventListener('click',()=>{
     letOffset(-1);
+})
+
+
+document.querySelector('#ymaps').addEventListener('scroll',(e)=>{
+    console.log('scroll')
+    e.preventDefault();
 })

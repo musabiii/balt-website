@@ -4,6 +4,8 @@ html(lang="en")
         meta(charset="UTF-8")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet",href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css")
+        script(src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js")
         title Document
     body
         header.container
@@ -87,11 +89,24 @@ html(lang="en")
                     .grid-item__title Честный знак
 
 
+        .location.container
+            h1.title Мы находимся
+                h3 Адрес:
+                    span  Западная промзона, панель Е, склад №3
+                #ymaps
+                    //- script(type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A27b8ce6139cf40f3a973819f9218c80d8994760c4d13ecd7a28c2a1b6b3885cf&amp;width=1170&amp;height=660&amp;lang=ru_RU&amp;scroll=true")
+                    script(type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A27b8ce6139cf40f3a973819f9218c80d8994760c4d13ecd7a28c2a1b6b3885cf&amp;width=100%25&amp;height=660&amp;lang=ru_RU&amp;scroll=true")
         .contacts#contacts.container
             h1.title Контакты
+            .contacts-box
+                .left
+                    .phone +7 922 282 50 44
+                    .email musabi@live.com
+                .right
+                    .location Местоположение
 
         footer.container
-            .footer-item s
+            .footer-item
 
 
 

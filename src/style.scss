@@ -140,12 +140,15 @@ main {
 .carousel {
   .box-inn {
     height: 877.5px;
+    width: 300%;
   }
 
   .card {
     // width: 1170px;
     // height: 100%;
-    max-width: 1170px;
+    flex:1 1 1170px;
+    background-color: #696969;
+    border: 5px solid red;
 
     h1 {
       position: absolute;
@@ -160,7 +163,7 @@ main {
       img {
         object-fit: fill;
         // width: 100%;
-        height: 100%;
+        height: 500px;
       }
     }
   }
@@ -210,4 +213,27 @@ main {
       }
     }
   }
+}
+
+.contacts-box {
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.location {
+  #ymaps {
+    margin-top: 20px;
+  }
+  span {
+    font-weight: normal;
+  }
+}
+
+.container #ymaps .ymaps-2-1-79-map.ymaps-2-1-79-i-ua_js_yes.ymaps-2-1-79-map-bg.ymaps-2-1-79-islets_map-lang-ru {
+  width: 100%;
+}
+
+#ymaps>ymapx {
+  width: 100%;
 }
